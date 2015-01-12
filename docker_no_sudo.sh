@@ -27,7 +27,6 @@ while getopts $OPTSTRING opt; do
 			sudo groupadd docker
 			sudo gpasswd -a ${OPTARG} docker
 			sudo service docker restart
-			sudo service docker.io restart
 			;;
 		h)
 			usage
